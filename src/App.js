@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import './App.css'; // Import your CSS file for styling
+import FormBuilder from './components/FormBuilder';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Dynamic Form Generator</h1>
+        <div class = "para"><p>Create a form using Add Field button</p>
+        <p>You can save & load the last saved configuration</p>
+        <p>Click submit Form but make sure labels aren't empty</p>
+        </div>
       </header>
+      <main>
+        <FormBuilder />
+      </main>
     </div>
   );
 }
